@@ -13,7 +13,7 @@ import android.widget.TextView;
 public class ConfirmacionDatos extends AppCompatActivity {
 
     private Button btnEdit;
-    String nombre, telefono, correo;
+    String nombre, telefono, correo, descr, date;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,14 +35,21 @@ public class ConfirmacionDatos extends AppCompatActivity {
         nombre = parametros.getString("name");
         telefono = parametros.getString("mobile");
         correo = parametros.getString("email");
+        descr = parametros.getString("descr");
+        date = parametros.getString("date");
+
 
         TextView tvName = (TextView) findViewById(R.id.tvName);
         TextView tvMobile = (TextView) findViewById(R.id.tvMobile);
         TextView tvEmail = (TextView) findViewById(R.id.tvEmail);
+        TextView tvDate = (TextView) findViewById(R.id.tvDate);
+        TextView tvDescr = (TextView) findViewById(R.id.tvDescr);
 
         tvName.setText(nombre);
         tvMobile.setText(telefono);
         tvEmail.setText(correo);
+        tvDate.setText(date);
+        tvDescr.setText(descr);
 
         btnEdit = (Button) findViewById(R.id.btn_edit);
 
@@ -53,6 +60,8 @@ public class ConfirmacionDatos extends AppCompatActivity {
                 intent.putExtra("name", nombre);
                 intent.putExtra("mobile", telefono);
                 intent.putExtra("email", correo);
+                intent.putExtra("date", date);
+                intent.putExtra("descr", descr);
                 startActivity(intent);
             }
         });

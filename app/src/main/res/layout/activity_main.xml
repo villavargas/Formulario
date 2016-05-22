@@ -54,18 +54,17 @@
                 android:inputType="textEmailAddress" />
         </android.support.design.widget.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/input_layout_password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <EditText
-                android:id="@+id/etPassword"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/hint_password"
-                android:inputType="textPassword" />
-        </android.support.design.widget.TextInputLayout>
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/linearLayout1">
+            <EditText android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:id="@+id/txtDate">
+                <requestFocus></requestFocus>
+            </EditText>
+            <Button android:layout_height="wrap_content"
+                android:layout_weight="0.5" android:id="@+id/btnCalendar" android:text="Calendario"
+                android:layout_width="100dp"></Button>
+        </LinearLayout>
 
         <android.support.design.widget.TextInputLayout
             android:id="@+id/input_layout_mobile"

@@ -16,6 +16,8 @@
     <string name="nombre">Luis Villa</string>
     <string name="mobile">7224310643</string>
     <string name="email">villa_vargas@hotmail.com</string>
+    <string name="date">28/11/1980</string>
+    <string name="descr">Algo</string>
 
 
 </resources>

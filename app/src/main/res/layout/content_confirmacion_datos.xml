@@ -37,20 +37,73 @@
         android:text="@string/nombre"
         />
 
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/linear">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:text="Fecha de nacimiento:  "
+                />
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date"
+                />
+        </LinearLayout>
 
+
+        <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:id="@+id/linear1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:text="Tel: "
+            />
         <TextView
             android:id="@+id/tvMobile"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/mobile"
             />
+    </LinearLayout>
 
-        <TextView
-            android:id="@+id/tvEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/email"
-            />
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/linear2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:text="Email: "
+                />
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/linear3">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:text="Descripción: "
+                />
+            <TextView
+                android:id="@+id/tvDescr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/descr"
+                />
+        </LinearLayout>
+
 
 
         <Button
